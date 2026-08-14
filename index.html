@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Shudhanshu Agarwal - Aspiring Actuarial Analyst">
+    <meta name="author"
+          content="Shudhanshu Agarwal">
+
+    <title>Shudhanshu Agarwal | Aspiring Actuarial Analyst</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* =========================================================
+           ROOT VARIABLES
+        ========================================================= */
+
+        :root {
+            --navy: #14243a;
+            --navy-dark: #0d1a2c;
+            --navy-light: #223854;
+
+            --accent: #2d82ad;
+            --accent-dark: #216783;
+            --accent-light: #eaf5fa;
+
+            --text: #273444;
+            --muted: #667085;
+
+            --background: #f4f7fa;
+            --white: #ffffff;
+
+            --border: #dce4eb;
+
+            --success: #198754;
+            --success-bg: #eaf7ef;
+
+            --shadow: 0 10px 30px rgba(20, 36, 58, 0.07);
+
+            --radius: 14px;
+        }
+
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            line-height: 1.65;
+
+            color: var(--text);
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #eef3f7 0%,
+                    #f7f9fb 100%
+                );
+
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+
+        /* =========================================================
+           CONTAINER
+        ========================================================= */
+
+        .container {
+            width: min(1120px, 92%);
+            margin: 0 auto;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        header {
+            position: relative;
+            overflow: visible;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy-dark),
+                    var(--navy) 55%,
+                    #1c3652
+                );
+
+            color: var(--white);
+
+            padding:
+                55px
+                0
+                58px;
+        }
+
+
+        .header-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+
+        /* =========================================================
+           PROFILE BLOCK
+        ========================================================= */
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+
+        .profile-photo-wrapper {
+            flex-shrink: 0;
+        }
+
+
+        .profile-photo {
+            width: 155px;
+            height: 155px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border:
+                5px solid
+                rgba(255, 255, 255, 0.96);
+
+            box-shadow:
+                0 12px 35px
+                rgba(0, 0, 0, 0.30);
+        }
+
+
+        .profile-info {
+            flex: 1;
+        }
+
+
+        .eyebrow {
+            color: #8dc5e1;
+
+            font-size: 0.82rem;
+
+            font-weight: 700;
+
+            letter-spacing: 2.2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 8px;
+        }
+
+
+        .name {
+            font-size:
+                clamp(
+                    2.5rem,
+                    6vw,
+                    4.5rem
+                );
+
+            line-height: 1.02;
+
+            font-weight: 800;
+
+            letter-spacing: -1.7px;
+        }
+
+
+        .title {
+            margin-top: 9px;
+
+            font-size:
+                clamp(
+                    1.1rem,
+                    2.5vw,
+                    1.45rem
+                );
+
+            font-weight: 400;
+
+            color: #dce7f0;
+        }
+
+
+        /* =========================================================
+           CONTACT LINKS
+        ========================================================= */
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 11px;
+        }
+
+
+        .contact-item {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding:
+                10px
+                14px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.14);
+
+            border-radius: 9px;
+
+            background:
+                rgba(255,255,255,0.035);
+
+            color: #edf6fb;
+
+            font-size: 0.88rem;
+
+            transition:
+                transform 0.22s ease,
+                background 0.22s ease,
+                border-color 0.22s ease;
+        }
+
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+
+            background:
+                rgba(255,255,255,0.09);
+
+            border-color:
+                rgba(131, 198, 229, 0.65);
+        }
+
+
+        .contact-item i {
+            width: 16px;
+
+            color:
+                #8dc5e1;
+
+            text-align: center;
+        }
+
+
+        /* =========================================================
+           MAIN
+        ========================================================= */
+
+        main {
+            padding:
+                48px
+                0
+                70px;
+        }
+
+
+        /* =========================================================
+           SECTION CARD
+        ========================================================= */
+
+        .section {
+            background: var(--white);
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                var(--radius);
+
+            padding:
+                34px;
+
+            margin-bottom:
+                24px;
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .section-header {
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin-bottom: 24px;
+        }
+
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+
+            display: grid;
+            place-items: center;
+
+            flex-shrink: 0;
+
+            background:
+                var(--accent-light);
+
+            color:
+                var(--accent);
+
+            border-radius: 10px;
+        }
+
+
+        .section-title {
+            color:
+                var(--navy);
+
+            font-size:
+                1.35rem;
+
+            font-weight:
+                750;
+        }
+
+
+        /* =========================================================
+           SUMMARY
+        ========================================================= */
+
+        .summary {
+            max-width: 970px;
+
+            color:
+                #485467;
+
+            font-size:
+                1.02rem;
+        }
+
+
+        .summary strong {
+            color:
+                var(--navy);
+        }
+
+
+        /* =========================================================
+           QUALIFICATIONS
+        ========================================================= */
+
+        .timeline {
+            position: relative;
+        }
+
+
+        .timeline::before {
+            content: "";
+
+            position: absolute;
+
+            top: 8px;
+            bottom: 8px;
+
+            left: 9px;
+
+            width: 2px;
+
+            background:
+                #d9e2e9;
+        }
+
+
+        .timeline-item {
+            position: relative;
+
+            display: grid;
+
+            grid-template-columns:
+                20px
+                1fr
+                auto;
+
+            column-gap: 18px;
+
+            align-items: start;
+
+            margin-bottom: 32px;
+        }
+
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .timeline-dot {
+            position: relative;
+
+            width: 20px;
+            height: 20px;
+
+            z-index: 2;
+
+            border:
+                5px solid
+                var(--accent);
+
+            background:
+                var(--white);
+
+            border-radius: 50%;
+        }
+
+
+        .timeline-content h3 {
+            color:
+                var(--navy);
+
+            font-size:
+                1.06rem;
+
+            line-height: 1.4;
+
+            margin-bottom: 3px;
+        }
+
+
+        .institution {
+            color:
+                var(--accent);
+
+            font-size:
+                0.92rem;
+
+            font-weight:
+                700;
+
+            margin-bottom: 7px;
+        }
+
+
+        .timeline-content p {
+            color:
+                var(--muted);
+
+            font-size:
+                0.91rem;
+
+            max-width:
+                760px;
+        }
+
+
+        .date {
+            color:
+                var(--muted);
+
+            font-size:
+                0.86rem;
+
+            font-weight:
+                700;
+
+            white-space:
+                nowrap;
+
+            padding-top:
+                2px;
+        }
+
+
+        .status {
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                6px;
+
+            margin-top:
+                9px;
+
+            padding:
+                4px
+                10px;
+
+            border-radius:
+                50px;
+
+            background:
+                var(--success-bg);
+
+            color:
+                var(--success);
+
+            font-size:
+                0.76rem;
+
+            font-weight:
+                700;
+        }
+
+
+        /* =========================================================
+           PROFESSIONAL EXPERIENCE
+        ========================================================= */
+
+        .experience-empty {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 5px;
+
+            padding:
+                20px;
+
+            border:
+                1px dashed
+                var(--border);
+
+            border-radius:
+                11px;
+
+            background:
+                #fbfcfd;
+        }
+
+
+        .experience-empty h3 {
+            color:
+                var(--navy);
+
+            font-size:
+                1rem;
+        }
+
+
+        .experience-empty p {
+            color:
+                var(--muted);
+
+            font-size:
+                0.9rem;
+        }
+
+
+        /* =========================================================
+           EDUCATION
+        ========================================================= */
+
+        .education-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(
+                        0,
+                        1fr
+                    )
+                );
+
+            gap:
+                18px;
+        }
+
+
+        .education-card {
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                12px;
+
+            padding:
+                20px;
+
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+
+        .education-card:hover {
+            transform:
+                translateY(-3px);
+
+            border-color:
+                #afd1e1;
+
+            box-shadow:
+                0 9px 22px
+                rgba(20,36,58,0.07);
+        }
+
+
+        .education-card h3 {
+            color:
+                var(--navy);
+
+            font-size:
+                1rem;
+
+            line-height:
+                1.4;
+
+            margin-bottom:
+                5px;
+        }
+
+
+        .school {
+            color:
+                var(--accent);
+
+            font-size:
+                0.91rem;
+
+            font-weight:
+                700;
+        }
+
+
+        .period {
+            margin-top:
+                7px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                0.86rem;
+        }
+
+
+        .result {
+            margin-top:
+                5px;
+
+            color:
+                var(--text);
+
+            font-size:
+                0.88rem;
+
+            font-weight:
+                700;
+        }
+
+
+        /* =========================================================
+           SKILLS
+        ========================================================= */
+
+        .skills-layout {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(
+                        0,
+                        1fr
+                    )
+                );
+
+            gap:
+                26px;
+        }
+
+
+        .skill-group {
+            margin-bottom:
+                25px;
+        }
+
+
+        .skill-group:last-child {
+            margin-bottom:
+                0;
+        }
+
+
+        .skill-group-title {
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                8px;
+
+            color:
+                var(--navy);
+
+            font-size:
+                0.96rem;
+
+            font-weight:
+                700;
+
+            margin-bottom:
+                11px;
+        }
+
+
+        .skill-group-title i {
+            color:
+                var(--accent);
+
+            width:
+                17px;
+        }
+
+
+        .skill-tags {
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+        }
+
+
+        .skill-tag {
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                7px;
+
+            padding:
+                8px
+                12px;
+
+            background:
+                #fbfdfe;
+
+            border:
+                1px solid
+                #cfdae2;
+
+            border-radius:
+                100px;
+
+            color:
+                #354052;
+
+            font-size:
+                0.82rem;
+
+            transition:
+                0.2s ease;
+        }
+
+
+        .skill-tag:hover {
+            color:
+                var(--accent);
+
+            border-color:
+                var(--accent);
+
+            background:
+                var(--accent-light);
+        }
+
+
+        .skill-tag i {
+            color:
+                var(--accent);
+
+            font-size:
+                0.75rem;
+        }
+
+
+        /* =========================================================
+           PROFESSIONAL SKILLS
+        ========================================================= */
+
+        .soft-skill-grid {
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                9px;
+        }
+
+
+        /* =========================================================
+           LANGUAGES
+        ========================================================= */
+
+        .language-row {
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                10px;
+        }
+
+
+        .language {
+            padding:
+                9px
+                16px;
+
+            background:
+                var(--accent-light);
+
+            color:
+                var(--navy);
+
+            border-radius:
+                9px;
+
+            font-size:
+                0.88rem;
+
+            font-weight:
+                700;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            padding:
+                25px
+                0
+                35px;
+
+            text-align:
+                center;
+
+            color:
+                var(--muted);
+
+            font-size:
+                0.83rem;
+        }
+
+
+        /* =========================================================
+           PRINT
+        ========================================================= */
+
+        @media print {
+
+            body {
+                background:
+                    #ffffff;
+            }
+
+            header {
+                padding:
+                    30px
+                    0;
+            }
+
+            main {
+                padding:
+                    25px
+                    0;
+            }
+
+            .section {
+                box-shadow:
+                    none;
+
+                break-inside:
+                    avoid;
+            }
+
+            .contact-item:hover,
+            .education-card:hover,
+            .skill-tag:hover {
+                transform:
+                    none;
+            }
+        }
+
+
+        /* =========================================================
+           TABLET
+        ========================================================= */
+
+        @media (max-width: 850px) {
+
+            .skills-layout {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .profile-section {
+                gap:
+                    24px;
+            }
+
+            .profile-photo {
+                width:
+                    135px;
+
+                height:
+                    135px;
+            }
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding:
+                    42px
+                    0
+                    40px;
+            }
+
+
+            main {
+                padding:
+                    28px
+                    0
+                    48px;
+            }
+
+
+            .section {
+                padding:
+                    24px
+                    20px;
+
+                margin-bottom:
+                    18px;
+            }
+
+
+            .profile-section {
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+            }
+
+
+            .profile-photo {
+                width:
+                    125px;
+
+                height:
+                    125px;
+            }
+
+
+            .name {
+                letter-spacing:
+                    -0.8px;
+            }
+
+
+            .contact-row {
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+            }
+
+
+            .contact-item {
+                width:
+                    100%;
+            }
+
+
+            .timeline-item {
+                grid-template-columns:
+                    20px
+                    1fr;
+
+                gap:
+                    12px;
+            }
+
+
+            .date {
+                grid-column:
+                    2;
+
+                margin-top:
+                    -6px;
+            }
+
+
+            .education-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .skills-layout {
+                grid-template-columns:
+                    1fr;
+            }
+        }
+
+
+        /* =========================================================
+           SMALL MOBILE
+        ========================================================= */
+
+        @media (max-width: 480px) {
+
+            .container {
+                width:
+                    94%;
+            }
+
+
+            .section-title {
+                font-size:
+                    1.18rem;
+            }
+
+
+            .summary {
+                font-size:
+                    0.94rem;
+            }
+
+
+            .timeline-content h3 {
+                font-size:
+                    0.98rem;
+            }
+
+
+            .contact-item {
+                font-size:
+                    0.82rem;
+            }
+
+
+            .skill-tag {
+                font-size:
+                    0.79rem;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header>
+
+        <div class="container header-inner">
+
+
+            <div class="profile-section">
+
+
+                <div class="profile-photo-wrapper">
+
+                    <!--
+                        IMPORTANT:
+                        Save your uploaded professional photo as:
+                        profile.jpg
+
+                        Put it in the SAME folder as index.html.
+                    -->
+
+                    <img
+                        src="profile.jpg"
+                        alt="Professional portrait of Shudhanshu Agarwal"
+                        class="profile-photo"
+                    >
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <div class="eyebrow">
+                        Actuarial Science Professional
+                    </div>
+
+
+                    <h1 class="name">
+                        Shudhanshu Agarwal
+                    </h1>
+
+
+                    <p class="title">
+                        Aspiring Actuarial Analyst
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-row">
+
+
+                <a
+                    class="contact-item"
+                    href="mailto:agr.shudanshu402@gmail.com"
+                >
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>
+                        agr.shudanshu402@gmail.com
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="contact-item"
+                    href="tel:+916299998089"
+                >
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>
+                        +91 6299998089
+                    </span>
+
+                </a>
+
+
+                <span class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        Ranchi, Jharkhand
+                    </span>
+
+                </span>
+
+
+                <!-- Replace this URL with your real LinkedIn profile -->
+
+                <a
+                    class="contact-item"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+                </a>
+
+
+                <!-- Replace this URL with your real GitHub profile -->
+
+                <a
+                    class="contact-item"
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <span>
+                        GitHub
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+
+    <main>
+
+        <div class="container">
+
+
+            <!-- =====================================================
+                 PROFESSIONAL SUMMARY
+            ====================================================== -->
+
+            <section class="section">
+
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+
+                        <i class="fa-solid fa-user-tie"></i>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Professional Summary
+                    </h2>
+
+                </div>
+
+
+                <p class="summary">
+
+                    Aspiring Actuarial Analyst with
+                    <strong>
+                        CS1 and CM1 cleared from the Institute of Actuaries
+                        of India (IAI)
+                    </strong>
+                    and a strong academic foundation in actuarial science,
+                    statistics, mathematics, and financial analysis.
+
+                    Seeking an entry-level actuarial role to apply quantitative
+                    and analytical skills in areas such as risk analysis,
+                    insurance, reserving, pricing, and data analysis while
+                    gaining hands-on industry experience and progressing
+                    toward actuarial qualification.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 ACTUARIAL QUALIFICATIONS
+            ====================================================== -->
+
+            <section class="section">
+
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Actuarial Qualification Journey
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <!-- CM1 -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                CM1 — Actuarial Mathematics
+                            </h3>
+
+
+                            <div class="institution">
+                                Institute of Actuaries of India (IAI)
+                            </div>
+
+
+                            <p>
+                                Successfully cleared the Actuarial Mathematics
+                                examination, demonstrating a foundation in
+                                financial mathematics and actuarial concepts.
+                            </p>
+
+
+                            <span class="status">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Passed
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="date">
+                            Nov 2025
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CS1 -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                CS1 — Actuarial Statistics
+                            </h3>
+
+
+                            <div class="institution">
+                                Institute of Actuaries of India (IAI)
+                            </div>
+
+
+                            <p>
+                                Successfully cleared the Actuarial Statistics
+                                examination, building a foundation in probability,
+                                statistics, and quantitative analysis.
+                            </p>
+
+
+                            <span class="status">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Passed
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="date">
+                            May 2025
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ACET -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                ACET — Actuarial Common Entrance Exam
+                            </h3>
+
+
+                            <div class="institution">
+                                Institute of Actuaries of India (IAI)
+                            </div>
+
+
+                            <p>
+                                Successfully cleared the entrance examination
+                                for the actuarial profession.
+                            </p>
+
+
+                            <span class="status">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Passed
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="date">
+                            Dec 2024
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CURRENT -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Current Actuarial Studies
+                            </h3>
+
+
+                            <div class="institution">
+                                Institute of Actuaries of India (IAI)
+                            </div>
+
+
+                            <p>
+                                Currently preparing for
+                                <strong>CM2</strong>
+                                and
+                                <strong>CB1</strong>.
+                            </p>
+
+                        </div>
+
+
+                        <div class="date">
+                            Current
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 EXPERIENCE
+            ====================================================== -->
+
+            <section class="section">
+
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Professional Experience
+                    </h2>
+
+                </div>
+
+
+                <div class="experience-empty">
+
+                    <h3>
+                        Entry-Level Actuarial Candidate
+                    </h3>
+
+
+                    <p>
+                        Currently seeking an entry-level actuarial opportunity
+                        to gain hands-on corporate experience and apply
+                        actuarial, statistical, mathematical, and analytical
+                        knowledge in a professional environment.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 EDUCATION
+            ====================================================== -->
+
+            <section class="section">
+
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Education
+                    </h2>
+
+                </div>
+
+
+                <div class="education-grid">
+
+
+                    <!-- MSc -->
+
+                    <article class="education-card">
+
+                        <h3>
+                            M.Sc. Actuarial Science
+                        </h3>
+
+
+                        <div class="school">
+                            Amity University Noida
+                        </div>
+
+
+                        <div class="period">
+                            2026 – 2028
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- BCom -->
+
+                    <article class="education-card">
+
+                        <h3>
+                            B.Com (Honors), Accountancy
+                        </h3>
+
+
+                        <div class="school">
+                            Ranchi University
+                        </div>
+
+
+                        <div class="period">
+                            2021 – 2024
+                        </div>
+
+
+                        <div class="result">
+                            CGPA: 8.3
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 12th -->
+
+                    <article class="education-card">
+
+                        <h3>
+                            Higher Secondary (12th)
+                        </h3>
+
+
+                        <div class="school">
+                            DAV Public School
+                        </div>
+
+
+                        <div class="period">
+                            2019 – 2021
+                        </div>
+
+
+                        <div class="result">
+                            84.2%
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 TECHNICAL SKILLS
+            ====================================================== -->
+
+            <section class="section">
+
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Technical Skills
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-layout">
+
+
+                    <!-- LEFT COLUMN -->
+
+                    <div>
+
+
+                        <!-- EXCEL -->
+
+                        <div class="skill-group">
+
+                            <div class="skill-group-title">
+
+                                <i class="fa-solid fa-file-excel"></i>
+
+                                Excel
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-table"></i>
+
+                                    Data Cleaning
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-table"></i>
+
+                                    Pivot Tables
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                                    VLOOKUP / XLOOKUP
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-gears"></i>
+
+                                    Macros
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-calculator"></i>
+
+                                    Financial Calculations
+
+                                </span>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- R -->
+
+                        <div class="skill-group">
+
+                            <div class="skill-group-title">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                                R Programming
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-chart-column"></i>
+
+                                    Data Manipulation
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-chart-line"></i>
+
+                                    Statistical Analysis
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-chart-area"></i>
+
+                                    Regression Fundamentals
+
+                                </span>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- RIGHT COLUMN -->
+
+                    <div>
+
+
+                        <!-- PYTHON -->
+
+                        <div class="skill-group">
+
+                            <div class="skill-group-title">
+
+                                <i class="fa-brands fa-python"></i>
+
+                                Python
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-code"></i>
+
+                                    Scripting Fundamentals
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    Data Structures
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-seedling"></i>
+
+                                    Beginner Level
+
+                                </span>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ACTUARIAL -->
+
+                        <div class="skill-group">
+
+                            <div class="skill-group-title">
+
+                                <i class="fa-solid fa-chart-pie"></i>
+
+                                Actuarial Concepts
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-chart-line"></i>
+
+                                    CM1 Concepts
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-square-root-variable"></i>
+
+                                    CS1 Concepts
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-coins"></i>
+
+                                    Financial Mathematics
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-dice"></i>
+
+                                    Probability
+
+                                </span>
+
+
+                                <span class="skill-tag">
+
+                                    <i class="fa-solid fa-scale-balanced"></i>
+
+                                    Basic Valuation Principles
+
+                                </span>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 PROFESSIONAL SKILLS
+            ====================================================== -->
+
+            <section class="section">
+
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+
+                        <i class="fa-solid fa-people-group"></i>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Professional Skills
+                    </h2>
+
+                </div>
+
+
+                <div class="soft-skill-grid">
+
+
+                    <span class="skill-tag">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        Analytical Thinking
+
+                    </span>
+
+
+                    <span class="skill-tag">
+
+                        <i class="fa-solid fa-puzzle-piece"></i>
+
+                        Problem Solving
+
+                    </span>
+
+
+                    <span class="skill-tag">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Attention to Detail
+
+                    </span>
+
+
+                    <span class="skill-tag">
+
+                        <i class="fa-solid fa-arrows-rotate"></i>
+
+                        Adaptability
+
+                    </span>
+
+
+                    <span class="skill-tag">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        Willingness to Learn
+
+                    </span>
+
+
+                    <span class="skill-tag">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        Team Collaboration
+
+                    </span>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 LANGUAGES
+            ====================================================== -->
+
+            <section class="section">
+
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+
+                        <i class="fa-solid fa-language"></i>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Languages
+                    </h2>
+
+                </div>
+
+
+                <div class="language-row">
+
+
+                    <span class="language">
+                        English
+                    </span>
+
+
+                    <span class="language">
+                        Hindi
+                    </span>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            ©
+            <span id="year"></span>
+            Shudhanshu Agarwal · Aspiring Actuarial Analyst
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+
+</body>
+</html>
